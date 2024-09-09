@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Laboratorio #2 </title>
+</head>
+<body>
+   <h1> Laboratorio #2 </h1> 
+    <p> 
+        <strong>Problema #1</strong> <br>
+            <Strong>¿Qué es Javascript y en qué se asemeja a Java?</Strong> <br>
+            JavaScript es un lenguaje de programación interpretado, ligero, 
+	        utilizado principalmente para el desarrollo web, mientras que Java es un lenguaje 
+	        de programación compilado, orientado a objetos, utilizado en múltiples plataformas. <br>
+	        Ambos comparten una sintaxis similar, pero son fundamentalmente diferentes en su funcionamiento 
+	        y propósito.
+    </p>
+
+    <p>
+        <strong>Problema #2</strong> <br>
+        Declarar dos variables con la palabra reservada "var", imprimir el resultado de las operaciones de "Suma", 
+        "Resta", "Multiplicación" y "División" en la consola. Las variables pueden ser estáticas. <br>
+        <strong>Mis variables para este problema son:</strong> <br>
+        var num1 = 15; <br>
+        var num2 = 8; <br>
+
+            <script>
+            var num1 = 15;
+            var num2 = 8;
+            
+            console.log("--Problema #2--")
+            console.log("Suma: " + (num1 + num2));
+            console.log("Resta: " + (num1 - num2));
+            console.log("Multiplicación: " + (num1 * num2));
+            console.log("División: " + (num1 / num2));
+            </script>
+
+        <Strong> Resultado - Problema #2</Strong><br>
+        Suma: 23 <br>
+        Resta: 7 <br>
+        Multiplicación: 120 <br>
+        División: 1.875 <br>
+    </p>
+
+    <p>
+        <strong>Problema #3</strong> <br>
+        Declarar dos variables con la palabra reservada "let", imprimir la concatenación de ellas. <br>
+        <strong> Las variables para este problema son: </strong> <br>
+        let texto1 = "Lionel Messi,";<br>
+        let texto2 = " El GOAT";<br>
+
+            <script>
+            let texto1 = "Lionel Messi,";
+            let texto2 = " El GOAT";
+            
+            console.log("--Problema #3--")
+            console.log(texto1 + texto2);
+            </script>
+
+        <Strong> Resultado - Problema #3</Strong><br>
+        Lionel Messi, El GOAT
+    </p>
+
+    <p>
+        <strong>Problema #4</strong> <br>
+        Declarar dos variables con la palabra reservada "const", imprimir cuál es el tipo de dato de esa variable. <br>
+        <strong> Las variables para este problema son: </strong> <br>
+        const myName = "Kesniel"; <br>
+        const e = 2.7182; <br>
+
+            <script>
+            const myName = "Kesniel";
+            const e = 2.7182;
+            
+            console.log("--Problema #4--");
+            console.log(typeof myName);
+            console.log(typeof e); 
+            </script>
+
+        <Strong> Resultado - Problema #4</Strong><br>
+        string <br>
+        number
+    </p>
+
+    <p>
+        <strong>Problema #5</strong> <br>
+        Declarar una variable tipo Objeto, colocar 4 llaves dentro de él que contengan un number, 
+        un string, un booleano y un objeto vacío, en ese mismo orden. <br>
+        <strong> Las variables para este problema son: </strong> <br>
+
+            Numero: 10, <br>
+            Texto: "LM10", <br>
+            Booleano: true, <br>
+            objetoVacio: {} <br>
+
+            <script>
+            let miObjeto = 
+        {
+            numero: 10,
+            texto: "LM10",
+            booleano: true,
+            objetoVacio: {}
+        }; 
+            console.log("--Problema #5--")
+            console.log(miObjeto);
+            </script>
+    </p>
+ 
+    <p>
+        <strong>Problema #6</strong> <br>
+        Escribir una función en JS que tome un número entero positivo como argumento y devuelva la 
+        suma de todos los números menores que sean múltiplos de 3 o 5. <br>
+        Por ejemplo: Si el número dado es 10, la función debería devolver la suma de 3, 5, 6 y 9, que es 23. <br> <br>
+
+            <script>
+                function sumarMultiplos(n) {
+                    let suma = 0;
+                    for (let i = 1; i < n; i++) {
+                        if (i % 3 === 0 || i % 5 === 0) {
+                            suma += i;
+                        }
+                    }
+                    return suma;
+            }
+
+                function calcularSuma() {
+                    const num = document.getElementById("numero").value;
+                    const resultE = document.getElementById("resultado");
+
+                    if (num < 0) {
+                        resultE.textContent = "Por favor, ingresa un número positivo.";
+                        return;
+                    }
+
+                    const result = sumarMultiplos(num);
+                    resultE.textContent = "La suma de los múltiplos de 3 o 5 menores que " + num + " es: " + result;
+            }
+            </script>
+
+        <Strong> Suma de Multiplos Impares </Strong> <br>
+        <label for="numero"> Ingresa un número: </label>
+        <input type="number" id="numero">
+        <button onclick="calcularSuma()"> Calcular </button>
+        <p id="resultado"></p>
+    </p>
+    
+</body>
+</html>

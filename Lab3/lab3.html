@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Laboratorio #3 </title>
+    <script type="module" src="palindromo.js"></script>
+    <script type="module" src="contadorCaracteres.js"></script>
+    <script type="module" src="añoBisiesto.js"></script>
+    <script type="module" src="numPrimo.js"></script>
+</head>
+<body>
+
+   <h1> Laboratorio #3 </h1> 
+    <p> 
+        <strong>Problema #1</strong> <br>
+        Escribir una función que, dada una cadena "t", retorne si un número es un palíndromo de doble base o no. <br> 
+        (Palíndromo en base 10 y base 2). <br>
+    
+        <label for="numero">Ingresa un número:</label>
+        <input type="number" id="numero" />
+        <button onclick="revisarPalindromo()">Verificar</button>
+        <p id="resultado_palindromo"></p>
+    </p>
+
+    <p>
+        <strong>Problema #2</strong> <br>
+        Escribir una función que, dada una cadena "t", retorne la cantidad de caracteres de la cadena. <br>
+        Ejemplo: Dado AABBBACAA <br>
+        Se debería retornar que hay 5 A, 3 B, 1 C. El tipo de dato del retorno es a discreción del estudiante. <br>
+        
+        <label for="cadena">Ingresa una cadena:</label>
+        <input type="text" id="cadena" />
+        <button onclick="contadorCaracteres()">Contar</button>
+        <!-- Tabla -->
+        <div id="resultado_conteo"></div>
+    </p>
+
+    <p>
+        <strong>Problema #3</strong> <br>
+        Escribir una función que, dado un año "a", retorne si ese año es bisiesto o no. <br>
+
+        <label for="year">Ingresa un año:</label>
+        <input type="number" id="year" />
+        <button onclick="verifAñoBisiesto()">Verificar</button>
+        <p id="resultado_Bisiesto"></p>
+    </p>
+
+    <p>
+        <strong>Problema #4</strong> <br>
+        Escribir una función que, dado un número "n" ( 0 < n < 1000000), retorne la sumatoria de todos los número primos debajo de ese número. <br>
+        Ejemplo: Dado 7 <br>
+        Se debería retornar 18, ya que: 1 + 2 + 3 + 5 + 7 = 18 <br>
+
+        <label for="number">Ingresa un numero:</label>
+        <input type="number" id="number" min="1" max="999999"/>
+        <button onclick="calcularSumPrimos()">Calcular</button>
+        <p id="resultado_primo"></p>
+    </p>
+    
+</body>
+</html>
