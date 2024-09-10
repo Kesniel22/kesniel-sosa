@@ -1,0 +1,59 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5dc; 
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+    color: #333; 
+    line-height: 1.6; 
+    padding: 20px; 
+}
+
+h1 {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+p {
+    margin-bottom: 15px; 
+}
+
+label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+input[type="number"], input[type="text"] {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+}
+
+button {
+    background-color: #ffcc00; 
+    border: none; 
+    color: #333; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin-top: 5px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+
+button:hover {
+    background-color: #ff9900; 
+}
+
+#resultado_palindromo, #resultado_conteo, #resultado_Bisiesto, #resultado_primo {
+    margin-top: 15px; 
+    font-weight: bold; 
+}
